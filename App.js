@@ -1,17 +1,30 @@
-import { Center, VStack, Image, SpiroKitProvider, TitleOne, usePoppins, useSpiroKitTheme } from '@spirokit/core';
+import {
+  Center,
+  VStack,
+  Image,
+  SpiroKitProvider,
+  TitleOne,
+  usePoppins,
+  useSpiroKitTheme,
+} from "@spirokit/core";
 
-const myTheme = useSpiroKitTheme()
+const myTheme = useSpiroKitTheme();
 
 export default function App() {
-  const fontLoaded = usePoppins()
+  const fontLoaded = usePoppins();
 
-  if (!fontLoaded) return <></>
+  if (!fontLoaded) return <></>;
 
   return (
     <SpiroKitProvider theme={myTheme}>
       <Center flex={1} padding={4}>
         <VStack alignItems={"center"} space={4}>
-          <Image alt='SpiroKit logo' size={"220px"} resizeMode="contain" source={{ uri: "https://i.imgur.com/TvHaA0H.png" }}></Image>
+          <Image
+            alt="SpiroKit logo"
+            size={"220px"}
+            resizeMode="contain"
+            source={{ uri: "https://i.imgur.com/TvHaA0H.png" }}
+          ></Image>
           <TitleOne>Welcome to SpiroKit</TitleOne>
         </VStack>
       </Center>

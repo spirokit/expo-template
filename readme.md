@@ -12,19 +12,14 @@ The official SpiroKit template for [Expo](https://docs.expo.io/)
 expo init my-app --template @spirokit/expo-template
 ```
 
-3. Install all the required dependencies.
-```sh
-yarn
-```
+3. Download the `spirokit-core-[version].tgz` file from Gumroad and add it to the root of your project.
 
-4. Download the `spirokit-core-[version].tgz` file from Gumroad and add it to the root of your project.
-
-5. Install SpiroKit on your project
+4. Install SpiroKit on your project
 ```sh
 yarn add ./spirokit-core-[version].tgz
 ```
 
-6. Run your app.
+5. Run your app.
 ```
 npm start
 ```
